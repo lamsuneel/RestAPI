@@ -60,7 +60,7 @@ public class GetPlaceDetails extends BaseTest {
 		
 		PlaceTotalDetails checkplacedetails = response.as(PlaceTotalDetails.class);
 		
-		AllureLogger.logToAllure(Assert.assertEquals(checkplacedetails.getPostCode(),zipcode));
+		Assert.assertEquals(checkplacedetails.getPostCode(),zipcode);
 			
 		
 		
